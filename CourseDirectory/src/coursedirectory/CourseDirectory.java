@@ -126,20 +126,22 @@ public class CourseDirectory
                         endLoop =true;
                         break;
                     case 2 :
-                        Collections.sort(acourse,new ComparatorByFLACourseName());
-                        for (int i = 0; i < acourse.size(); i++) 
-                        {
-                            System.out.println(acourse.get(i).toString());
-                            
-                        }
+//                        Collections.sort(acourse,new ComparatorByFLACourseName());
+//                        for (int i = 0; i < acourse.size(); i++) 
+//                        {
+//                            System.out.println(acourse.get(i).toString());
+//                            
+//                        }
+                        sortByFLACourseName();
                         endLoop =true;
                         break;
                     case 3 :
-                        Collections.sort(acourse, new ComparatorByYear());
-                        for (int i = 0; i < 10; i++) 
-                        {
-                            System.out.println(acourse.get(i).toString());
-                        }
+//                        Collections.sort(acourse, new ComparatorByYear());
+//                        for (int i = 0; i < acourse.size(); i++) 
+//                        {
+//                            System.out.println(acourse.get(i).toString());
+//                        }
+                        YearLevel();
                         endLoop = true;
                         break;
                     case 4 :
@@ -249,20 +251,30 @@ public class CourseDirectory
     }
     public void sortByFIUCourseName()
     {
-//        Collections.sort(acourse);
-//        for (int i = 0; i < acourse.size(); i++) 
-//        {
-//            System.out.println(acourse.get(i).toString());
-//        }
+        Collections.sort(acourse);
+        for (int i = 0; i < acourse.size(); i++) 
+        {
+            System.out.println(acourse.get(i).toString());
+        }
+        //System.out.println(acourse);
         
     }
     public void sortByFLACourseName()
     {
-        
+        Collections.sort(acourse, new ComparatorByFLACourseName());
+        for (int i = 0; i < acourse.size(); i++) {
+            System.out.println(acourse.get(i).toString());
+
+        }
+
     }
     public void YearLevel()
     {
-        
+        Collections.sort(acourse, new ComparatorByYear());
+        for (int i = 0; i < acourse.size(); i++) {
+            System.out.println(acourse.get(i).toString());
+        }
+
     }
     
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="1" failures="0" hostname="DESKTOP-7KGE27D" name="coursedirectory.CourseDirectoryTest" skipped="0" tests="2" time="0.085" timestamp="2019-10-12T18:33:12">
+<testsuite errors="0" failures="0" hostname="DESKTOP-7KGE27D" name="coursedirectory.CourseDirectoryTest" skipped="0" tests="1" time="0.064" timestamp="2019-10-12T22:39:02">
   <properties>
     <property name="netbeans.autoupdate.country" value="US" />
     <property name="javac.test.classpath" value=":build/classes:C:\Program Files\NetBeans 8.2\platform\modules\ext\junit-4.12.jar:C:\Program Files\NetBeans 8.2\platform\modules\ext\hamcrest-core-1.3.jar" />
@@ -39,7 +39,7 @@
     <property name="user.name" value="w_ara" />
     <property name="copylibs.rebase" value="true" />
     <property name="libs.swing-layout.maven-pom" value="" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner coursedirectory.CourseDirectoryTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\w_ara\Documents\FIU Classes\COP 3310\CourseDirectory\CourseDirectory\build\test\results\TEST-coursedirectory.CourseDirectoryTest.xml crashfile=C:\Users\w_ara\Documents\FIU Classes\COP 3310\CourseDirectory\CourseDirectory\build\junitvmwatcher104668729798569825.properties propsfile=C:\Users\w_ara\Documents\FIU Classes\COP 3310\CourseDirectory\CourseDirectory\build\junit273436964467833679.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner coursedirectory.CourseDirectoryTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\w_ara\Documents\FIU Classes\COP 3310\CourseDirectory\CourseDirectory\build\test\results\TEST-coursedirectory.CourseDirectoryTest.xml crashfile=C:\Users\w_ara\Documents\FIU Classes\COP 3310\CourseDirectory\CourseDirectory\build\junitvmwatcher8181466700170609043.properties propsfile=C:\Users\w_ara\Documents\FIU Classes\COP 3310\CourseDirectory\CourseDirectory\build\junit4851276437526001110.properties" />
     <property name="build.classes.dir" value="build/classes" />
     <property name="netbeans.accept_license_class" value="org.netbeans.license.AcceptLicense" />
     <property name="build.sysclasspath" value="ignore" />
@@ -71,7 +71,7 @@
     <property name="javac.debug" value="true" />
     <property name="javadoc.splitindex" value="true" />
     <property name="file.separator" value="\" />
-    <property name="javac.includesfile.binary" value="C:\Users\w_ara\Documents\FIU Classes\COP 3310\CourseDirectory\CourseDirectory\null568220601" />
+    <property name="javac.includesfile.binary" value="C:\Users\w_ara\Documents\FIU Classes\COP 3310\CourseDirectory\CourseDirectory\null1483536196" />
     <property name="libs.junit_4.maven-pom" value="" />
     <property name="mkdist.disabled" value="false" />
     <property name="javac.test.processorpath" value=":build/classes:C:\Program Files\NetBeans 8.2\platform\modules\ext\junit-4.12.jar:C:\Program Files\NetBeans 8.2\platform\modules\ext\hamcrest-core-1.3.jar" />
@@ -316,19 +316,21 @@
     <property name="platform.active" value="default_platform" />
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
   </properties>
-  <testcase classname="coursedirectory.CourseDirectoryTest" name="testMain" time="0.003" />
-  <testcase classname="coursedirectory.CourseDirectoryTest" name="testSortByFIUCourseName" time="0.008">
-    <error type="java.lang.NullPointerException">java.lang.NullPointerException
-	at coursedirectory.CourseDirectoryTest.testSortByFIUCourseName(CourseDirectoryTest.java:142)
-</error>
-  </testcase>
-  <system-out><![CDATA[main
-Course{FIUCourseName=CHM4080, FLACourseName=AAA1520, yearLevel=4, numCredits=3, prerequisites=[Chemistry 1025, Physics I]}
+  <testcase classname="coursedirectory.CourseDirectoryTest" name="testCreateCourse" time="0.004" />
+  <system-out><![CDATA[*** Creating Course ***
+*** Sorting by FIU course name ***
 Course{FIUCourseName=AOT3015, FLACourseName=OTA0101, yearLevel=3, numCredits=4, prerequisites=[Biology prep]}
+Course{FIUCourseName=CHM4080, FLACourseName=AAA1520, yearLevel=4, numCredits=3, prerequisites=[Chemistry 1025, Physics I]}
 Course{FIUCourseName=UAP4318, FLACourseName=CCE3103, yearLevel=1, numCredits=3, prerequisites=[ ]}
 *** Sorting by FLA course name ***
-coursedirectory.CourseDirectory@6d9c638
-*****************
+Course{FIUCourseName=CHM4080, FLACourseName=AAA1520, yearLevel=4, numCredits=3, prerequisites=[Chemistry 1025, Physics I]}
+Course{FIUCourseName=UAP4318, FLACourseName=CCE3103, yearLevel=1, numCredits=3, prerequisites=[ ]}
+Course{FIUCourseName=AOT3015, FLACourseName=OTA0101, yearLevel=3, numCredits=4, prerequisites=[Biology prep]}
+Sorting by Year Level
+Course{FIUCourseName=UAP4318, FLACourseName=CCE3103, yearLevel=1, numCredits=3, prerequisites=[ ]}
+Course{FIUCourseName=AOT3015, FLACourseName=OTA0101, yearLevel=3, numCredits=4, prerequisites=[Biology prep]}
+Course{FIUCourseName=CHM4080, FLACourseName=AAA1520, yearLevel=4, numCredits=3, prerequisites=[Chemistry 1025, Physics I]}
+*** Creating Course ***
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
